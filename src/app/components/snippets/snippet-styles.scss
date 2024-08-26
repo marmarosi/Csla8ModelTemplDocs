@@ -1,0 +1,64 @@
+@use '../../../styles';
+
+th, td {
+  padding: 0 5px;
+}
+
+.container {
+  min-width: 1080px;
+  /*transform: translate(-210px);*/
+}
+.category {
+  border: var(--primary-bg-color) 1px solid;
+  //padding-bottom: 2px;
+  text-align: center;
+  margin-bottom: 5px;
+  width: 1086px;
+  th, td {
+    padding: 0;
+  }
+}
+.model {
+  cursor: pointer;
+  font-weight: bold;
+  //background-color: #aeefe1;
+  background-color: var(--footer-bg-color);
+  padding: 0 10px;
+  margin-bottom: 5px;
+  width: 1066px;
+  border-radius: 15px 15px;
+  border: var(--primary-bg-color) 1px solid;
+}
+.right {
+  display: inline-block;
+  float: right;
+  letter-spacing: 3px;
+  width: 30px;
+}
+.snippets {
+  display: none;
+  margin-bottom: 5px;
+}
+.list th {
+  font-weight: normal;
+  background-color: var(--secondary-bg-color);
+}
+.list td {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.description {
+  width: 355px;
+}
+.shortcut {
+  width: 80px;
+}
+.filename {
+  width: 160px;
+}
+.param {
+  width: 40px;
+  text-align: center;
+}

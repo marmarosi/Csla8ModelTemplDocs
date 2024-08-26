@@ -1,0 +1,12 @@
+@use '../../styles';
+
+a {
+  text-decoration: none;
+  display: block;
+  padding: 0 10px;
+  line-height: 32px;
+  width: 180px;
+}
+a:hover, a:active {
+  background-color: var(--main-link-shadow);
+}
