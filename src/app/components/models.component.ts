@@ -11,7 +11,7 @@ import { ModelAttribute } from './model-attribute';
   template: `
     <ul>
       <li *ngFor="let content of contents">
-        <a [routerLink]="['/models', content.slug]">
+        <a [routerLink]="content.slug">
           {{ content.attributes.title }}
         </a>
       </li>
