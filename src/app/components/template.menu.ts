@@ -6,7 +6,7 @@ import { TemplateAttribute } from './template-attribute';
 import { TreeNode } from './tree-node';
 
 @Component({
-  selector: 'app-template-list',
+  selector: 'app-template-menu',
   standalone: true,
   imports: [ RouterOutlet, RouterLink, NgFor ],
   template: `
@@ -37,7 +37,7 @@ import { TreeNode } from './tree-node';
   `,
   styleUrl: 'side-menu.scss',
 })
-export default class TemplateListComponent {
+export default class TemplateMenu {
 
   #root = '/src/content/templates/';
   //readonly tree: ContentNode<TemplateAttribute>[] = [];
@@ -46,11 +46,15 @@ export default class TemplateListComponent {
     contentFile => contentFile.filename.startsWith( this.#root )
   )
     .map(contentFile => {
+      const pos = contentFile.attributes.slug.lastIndexOf('.');
+      const branch = pos < 0
+        ? ''
+        : `${ contentFile.attributes.slug.substring(0, pos) }`;
       return {
         id: '',
         slug: contentFile.attributes.slug,
         title: contentFile.attributes.title,
-        folder: contentFile.attributes.folder,
+        branch: branch,
         position: contentFile.attributes.position,
         level: 0,
         children: []
@@ -70,20 +74,23 @@ export default class TemplateListComponent {
   private setNodes(
     pid: string,
     level: number,
-    folder: string,
+    branch: string,
     container: Array<TreeNode>
   ): void {
 
     this.contents
-      .filter( node => (node.folder ?? '') === folder)
+      .filter( node => (node.branch ?? '') === branch)
       .sort(function(a, b) {
         return a.position - b.position
       })
       .forEach( (node, i) => {
         node.id = pid ? `${pid}.${i+1}` : (i+1).toString();
-        console.log(node.id );
         node.level = level;
-        this.setNodes( node.id, level + 1, `${folder}/${node.slug}`, node.children );
+        const pos = node.slug.lastIndexOf('.');
+        const childBranch = pos < 0
+          ? (branch ? `${branch}.${ node.slug }` : node.slug)
+          : `${branch}.${ node.slug.substring( pos + 1 ) }`;
+        this.setNodes( node.id, level + 1, childBranch, node.children );
         container.push( node );
       })
   }

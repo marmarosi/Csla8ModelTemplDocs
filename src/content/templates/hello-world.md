@@ -2,7 +2,6 @@
 title: Hello World
 slug: hello-world
 description: Hello World Description
-parent: 
 position: 100
 ---
 
