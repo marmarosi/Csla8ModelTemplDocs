@@ -1,0 +1,20 @@
+@use "sass:color";
+
+$font-family: Roboto, sans-serif;
+$font-size: 16px;
+$line-height: 24px;
+$font-weight: 400;
+$main-bg-color: white;
+$main-text-color: #666;
+$main-link-color: cornflowerblue;
+$main-link-shadow: color.scale( $main-link-color, $lightness: 85% );
+$primary-bg-color: #800020;
+$primary-bg-color-lighter: color.scale( $primary-bg-color, $lightness: 7% );
+$primary-bg-color-darker: color.scale( $primary-bg-color, $lightness: -7% );
+$primary-text-color: white;
+$primary-link-color: gold;
+$secondary-bg-color: #F2E8C6;
+$secondary-text-color: #800020;
+$secondary-link-color: color.scale( $secondary-text-color, $lightness: 15% );
+$footer-bg-color: #DAD4B5;
+$footer-text-color: black;

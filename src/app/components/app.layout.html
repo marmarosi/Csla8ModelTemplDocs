@@ -1,0 +1,42 @@
+<div class="upper-area">
+  <div class="header-stripe">
+    <div class="header-title">
+      <a routerLink="/">
+        <div>CSLA 8 Model Templates</div>
+      </a>
+    </div>
+    <ul>
+      <li><a routerLink="/models">Models</a></li>
+      <li><a routerLink="/templates">Templates</a></li>
+      <li><a routerLink="/snippets">Snippets</a></li>
+    </ul>
+    <div class="fill-remaining-space"></div>
+    <div class="header-item">
+      <a href="https://github.com/marmarosi/Csla8ModelTemplates">
+        <div class="header-block">GitHub</div>
+      </a>
+    </div>
+  </div>
+  <div class="content-stripe">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<div class="footer-stripe">
+  <div class="footer-item text-left">
+    <ul>
+      <li><a routerLink="/models">Models</a></li>
+      <li><a routerLink="/templates">Templates</a></li>
+      <li><a routerLink="/snippets">Snippets</a></li>
+    </ul>
+  </div>
+  <div class="footer-item text-center">
+    Copyright &copy; {{ year }} Mármarosi József<br>
+    Built with <a href="https://analogjs.org/">Analog</a>
+  </div>
+  <div class="footer-item text-right">
+    <ul>
+      <li><a href="https://github.com/marmarosi/Csla8ModelTemplates">Source</a></li>
+      <li><a href="https://github.com/marmarosi/Csla8ModelTemplates/issues">Report an issue</a></li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+@use '../../styles';
+
+.upper-area {
+  background-color: var(--main-bg-color);
+}
+.header-stripe {
+  background-color: var(--primary-bg-color);
+  padding: 0 10px;
+  display: flex;
+  .header-title {
+    display: inline-block;
+    font-weight: bold;
+  }
+  .header-item {
+    display: inline-block;
+  }
+  .header-block {
+  }
+  ul {
+    display: inline-block;
+    li {
+      display: inline-block;
+    }
+  }
+  a, a:visited {
+    padding: 0 10px;
+    color: var(--primary-link-color);
+    display: block;
+    line-height: 48px;
+    text-decoration: none;
+  }
+  a:hover, a:active {
+    background-color: var(--primary-bg-color-lighter);
+  }
+}
+.content-stripe {
+  min-height: 600px;
+}
+.footer-stripe {
+  color: var(--footer-text-color);
+  display: flex;
+  justify-content: center;
+  .footer-item {
+    padding: 10px;
+    min-width: 240px;
+  }
+  a, a:visited {
+    text-decoration: none;
+    color: var(--footer-text-color);
+  }
+}
