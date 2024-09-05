@@ -1,0 +1,318 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <title>CSLA 8 Model Templates</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&amp;display=swap" rel="stylesheet">
+    <script type="module" crossorigin="" src="/assets/index-B7V5WxzY.js"></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/index-Cj8Q1rs3.css">
+  <style ng-app-id="ng">[_ngcontent-ng-c4073874632]:root {
+  --font-family: Roboto, sans-serif;
+  --font-size: 16px;
+  --line-height: 24px;
+  --font-weight: 400;
+  --main-bg-color: white;
+  --main-text-color: #666;
+  --main-link-color: cornflowerblue;
+  --main-link-shadow: #e8effc;
+  --primary-bg-color: #800020;
+  --primary-bg-color-lighter: #9b0027;
+  --primary-bg-color-darker: #77001e;
+  --primary-text-color: white;
+  --primary-link-color: gold;
+  --secondary-bg-color: #F2E8C6;
+  --secondary-text-color: #800020;
+  --secondary-link-color: #b9002e;
+  --footer-bg-color: #DAD4B5;
+  --footer-text-color: black;
+}
+
+html[_ngcontent-ng-c4073874632], 
+body[_ngcontent-ng-c4073874632] {
+  height: 100%;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  background-color: var(--footer-bg-color);
+  color: var(--main-text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.fill-remaining-space[_ngcontent-ng-c4073874632] {
+  flex: 1 1 auto;
+  display: inline-block;
+}
+
+a[_ngcontent-ng-c4073874632], a[_ngcontent-ng-c4073874632]:visited {
+  color: var(--main-link-color);
+}
+
+ul[_ngcontent-ng-c4073874632] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.text--left[_ngcontent-ng-c4073874632] {
+  text-align: left;
+}
+
+.text-center[_ngcontent-ng-c4073874632] {
+  text-align: center;
+}
+
+.text-right[_ngcontent-ng-c4073874632] {
+  text-align: right;
+}
+
+table[_ngcontent-ng-c4073874632] {
+  border-collapse: collapse;
+}
+
+th[_ngcontent-ng-c4073874632] {
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+  font-weight: normal;
+}
+
+td[_ngcontent-ng-c4073874632], th[_ngcontent-ng-c4073874632] {
+  border: 1px solid #CCC;
+  padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.upper-area[_ngcontent-ng-c4073874632] {
+  background-color: var(--main-bg-color);
+}
+
+.header-stripe[_ngcontent-ng-c4073874632] {
+  background-color: var(--primary-bg-color);
+  padding: 0 10px;
+  display: flex;
+}
+.header-stripe[_ngcontent-ng-c4073874632]   .header-title[_ngcontent-ng-c4073874632] {
+  display: inline-block;
+  font-weight: bold;
+}
+.header-stripe[_ngcontent-ng-c4073874632]   .header-item[_ngcontent-ng-c4073874632] {
+  display: inline-block;
+}
+.header-stripe[_ngcontent-ng-c4073874632]   ul[_ngcontent-ng-c4073874632] {
+  display: inline-block;
+}
+.header-stripe[_ngcontent-ng-c4073874632]   ul[_ngcontent-ng-c4073874632]   li[_ngcontent-ng-c4073874632] {
+  display: inline-block;
+}
+.header-stripe[_ngcontent-ng-c4073874632]   a[_ngcontent-ng-c4073874632], .header-stripe[_ngcontent-ng-c4073874632]   a[_ngcontent-ng-c4073874632]:visited {
+  padding: 0 10px;
+  color: var(--primary-link-color);
+  display: block;
+  line-height: 48px;
+  text-decoration: none;
+}
+.header-stripe[_ngcontent-ng-c4073874632]   a[_ngcontent-ng-c4073874632]:hover, .header-stripe[_ngcontent-ng-c4073874632]   a[_ngcontent-ng-c4073874632]:active {
+  background-color: var(--primary-bg-color-lighter);
+}
+
+.content-stripe[_ngcontent-ng-c4073874632] {
+  min-height: 600px;
+}
+
+.footer-stripe[_ngcontent-ng-c4073874632] {
+  color: var(--footer-text-color);
+  display: flex;
+  justify-content: center;
+}
+.footer-stripe[_ngcontent-ng-c4073874632]   .footer-item[_ngcontent-ng-c4073874632] {
+  padding: 10px;
+  min-width: 240px;
+}
+.footer-stripe[_ngcontent-ng-c4073874632]   a[_ngcontent-ng-c4073874632], .footer-stripe[_ngcontent-ng-c4073874632]   a[_ngcontent-ng-c4073874632]:visited {
+  text-decoration: none;
+  color: var(--footer-text-color);
+}</style><style ng-app-id="ng">.hero[_ngcontent-ng-c2631600265] {
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+  height: 160px;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.hero-line-1[_ngcontent-ng-c2631600265] {
+  line-height: 80px;
+  font-size: 2.5rem;
+  font-family: "Abril Fatface", "Times New Roman";
+}
+
+.hero-line-2[_ngcontent-ng-c2631600265] {
+  line-height: 80px;
+  font-size: 2rem;
+}
+
+.features[_ngcontent-ng-c2631600265] {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  gap: 0 40px;
+}
+
+.feature[_ngcontent-ng-c2631600265] {
+  text-align: center;
+  width: 300px;
+}
+
+.feature-line-1[_ngcontent-ng-c2631600265] {
+  height: 200px;
+  line-height: 200px;
+}
+.feature-line-1[_ngcontent-ng-c2631600265]   img[_ngcontent-ng-c2631600265] {
+  vertical-align: bottom;
+}
+
+.feature-image[_ngcontent-ng-c2631600265] {
+  max-width: 300px;
+}</style></head>
+  <body><!--nghm-->
+    <app-root ng-version="18.2.0" ngh="0" ng-server-context="ssr-analog"><app-layout _nghost-ng-c4073874632="" ngh="1"><div _ngcontent-ng-c4073874632="" class="upper-area"><div _ngcontent-ng-c4073874632="" class="header-stripe"><div _ngcontent-ng-c4073874632="" class="header-title"><a _ngcontent-ng-c4073874632="" routerlink="/" href="/"><div _ngcontent-ng-c4073874632="">CSLA 8 Model Templates</div></a></div><ul _ngcontent-ng-c4073874632=""><li _ngcontent-ng-c4073874632=""><a _ngcontent-ng-c4073874632="" routerlink="/models" href="/models">Models</a></li><li _ngcontent-ng-c4073874632=""><a _ngcontent-ng-c4073874632="" routerlink="/templates" href="/templates">Templates</a></li><li _ngcontent-ng-c4073874632=""><a _ngcontent-ng-c4073874632="" routerlink="/snippets" href="/snippets">Snippets</a></li></ul><div _ngcontent-ng-c4073874632="" class="fill-remaining-space"></div><div _ngcontent-ng-c4073874632="" class="header-item"><a _ngcontent-ng-c4073874632="" href="https://github.com/marmarosi/Csla8ModelTemplates"><div _ngcontent-ng-c4073874632="" class="header-block">GitHub</div></a></div></div><div _ngcontent-ng-c4073874632="" class="content-stripe"><router-outlet _ngcontent-ng-c4073874632=""></router-outlet><ng-component _nghost-ng-c2631600265="" ngh="0"><section _ngcontent-ng-c2631600265="" class="hero"><div _ngcontent-ng-c2631600265="" class="hero-line-1"> REST API Model Templates </div><div _ngcontent-ng-c2631600265="" class="hero-line-2"> using .NET 8 &amp; CSLA version 8 </div></section><section _ngcontent-ng-c2631600265="" class="features"><div _ngcontent-ng-c2631600265="" class="feature"><div _ngcontent-ng-c2631600265="" class="feature-line-1"><img _ngcontent-ng-c2631600265="" src="/images/csla_win8_mid.png" alt="" class="feature-image"></div><h3 _ngcontent-ng-c2631600265="">CSLA.NET</h3><div _ngcontent-ng-c2631600265="" class="feature-line-2"><a _ngcontent-ng-c2631600265="" href="https://cslanet.com">CSLA .NET</a> is a software development framework that helps you build a reusable, maintainable object-oriented business layer for your app. </div></div><div _ngcontent-ng-c2631600265="" class="feature"><div _ngcontent-ng-c2631600265="" class="feature-line-1"><img _ngcontent-ng-c2631600265="" src="/images/model_templates.png" alt="" class="feature-image"></div><h3 _ngcontent-ng-c2631600265="">Model Templates</h3><div _ngcontent-ng-c2631600265="" class="feature-line-2"> The model templates shows a way how to use CSLA .NET business objects in a REST API web solution. </div></div><div _ngcontent-ng-c2631600265="" class="feature"><div _ngcontent-ng-c2631600265="" class="feature-line-1"><img _ngcontent-ng-c2631600265="" src="/images/code_snippets.png" alt="" class="feature-image"></div><h3 _ngcontent-ng-c2631600265="">Code Snippets</h3><div _ngcontent-ng-c2631600265="" class="feature-line-2"> The code snippets provide tools to quickly generate skeletons for business objects, data access code and contract definitions. </div></div></section></ng-component><!----></div></div><div _ngcontent-ng-c4073874632="" class="footer-stripe"><div _ngcontent-ng-c4073874632="" class="footer-item text-left"><ul _ngcontent-ng-c4073874632=""><li _ngcontent-ng-c4073874632=""><a _ngcontent-ng-c4073874632="" routerlink="/models" href="/models">Models</a></li><li _ngcontent-ng-c4073874632=""><a _ngcontent-ng-c4073874632="" routerlink="/templates" href="/templates">Templates</a></li><li _ngcontent-ng-c4073874632=""><a _ngcontent-ng-c4073874632="" routerlink="/snippets" href="/snippets">Snippets</a></li></ul></div><div _ngcontent-ng-c4073874632="" class="footer-item text-center"> Copyright © 2024 Mármarosi József<br _ngcontent-ng-c4073874632=""> Built with <a _ngcontent-ng-c4073874632="" href="https://analogjs.org/">Analog</a></div><div _ngcontent-ng-c4073874632="" class="footer-item text-right"><ul _ngcontent-ng-c4073874632=""><li _ngcontent-ng-c4073874632=""><a _ngcontent-ng-c4073874632="" href="https://github.com/marmarosi/Csla8ModelTemplates">Source</a></li><li _ngcontent-ng-c4073874632=""><a _ngcontent-ng-c4073874632="" href="https://github.com/marmarosi/Csla8ModelTemplates/issues">Report an issue</a></li></ul></div></div></app-layout></app-root>
+  
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"22":[{"i":"c2631600265","r":1}]}}]}</script></body></html>
