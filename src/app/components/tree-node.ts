@@ -4,7 +4,7 @@ export interface TreeNode {
   id: string;
   slug: string;
   title: string;
-  folder: string;
+  branch: string;
   position: number;
   level: number;
   children: TreeNode[];

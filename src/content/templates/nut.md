@@ -2,7 +2,6 @@
 title: Nut
 slug: nut
 description: Nut Description
-parent:
 position: 200
 ---
 

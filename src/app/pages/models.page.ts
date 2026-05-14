@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import ModelListComponent from '../components/models.component';
+import ModelMenu from '../components/model.menu';
 
 @Component({
   standalone: true,
-  imports: [ RouterOutlet, ModelListComponent ],
+  imports: [ RouterOutlet, ModelMenu ],
   template: `
     <aside class="model-menu">
-      <app-model-list></app-model-list>
+      <app-model-menu></app-model-menu>
     </aside>
     <main class="fill-remaining-space">
       <router-outlet></router-outlet>

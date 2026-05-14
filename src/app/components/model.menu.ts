@@ -5,7 +5,7 @@ import { injectContentFiles } from '@analogjs/content';
 import { ModelAttribute } from './model-attribute';
 
 @Component({
-  selector: 'app-model-list',
+  selector: 'app-model-menu',
   standalone: true,
   imports: [ RouterOutlet, RouterLink, NgFor ],
   template: `
@@ -19,7 +19,7 @@ import { ModelAttribute } from './model-attribute';
   `,
   styleUrl: 'side-menu.scss',
 })
-export default class ModelListComponent {
+export default class ModelMenu {
   readonly contents = injectContentFiles<ModelAttribute>(
     (contentFile) => {
       console.log (contentFile.filename);
